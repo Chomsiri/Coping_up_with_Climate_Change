@@ -1,0 +1,90 @@
+---
+title: "Input Table"
+author: "Clavero et al"
+date: "8/1/2021"
+output: html_document
+bibliography:
+  - bib/references.bib
+
+  
+---
+
+part_data <- read.csv("data input for modeling.csv")
+str(part_data)
+References <- References-bib
+part_data
+library(decisionSupport)
+
+
+```{r setup add_R_bib, include=FALSE}
+knitr::write_bib(c(.packages(),
+                   'knitr', 'decisionSupport', 'ggplot2'), 'bib/packages.bib')
+
+```
+
+## Input Table
+
+## Vulnerability to climate change
+
+The Philippines, as one of the countries located at the typhoon belt faces many climatic threats arising from strong tropical cyclones, changes in the rainfall pattern, the increasing temperature, and flooding & landslide caused either by too much rainfall or the rise in the sea level.
+
+@misc{conor_murphy_trocaire-maynooth-university-climate-change-reportpdf_nodate,
+	title = {trocaire-maynooth-university-climate-change-report.pdf}
+
+The Philippines deals with approximately 20 tropical cyclones each year, seven or eight of which making landfall that causes severe damage in terms of agricultural and socio-economic losses (@article{Yumul.2011). 
+
+One of the most damaging typhoons that hit the Philippines was typhoon Haiyan in 2013 which impacted thousands of people. Total number of casualties (including dead and missing) were 6,300 people (NDRRMC,
+2014a, 2014b).
+
+In terms of agricultural losses, total value of agricultural product lost amounted to USD 172.11 million, of which USD 47.6 million alone is attributed to rice.
+
+For more details see: https://apps.fas.usda.gov/newgainapi/api/report/downloadreportbyfilename?filename=Typhoon%20Haiyan%20Damage%20Summary_Manila_Philippines_12-4-2013.pdf
+
+This damaging effects of typhoon can also happen in the future which is why climate mitigation and actions are needed to prevent severe impact to the livelihood of the people particularly in terms of food production.
+
+Rice, being the Filipino´s staple food can be severely impacted by any changes in the climate. With this, farmers are facing great risk in terms of economic losses that they might encounter in the future.
+
+For the past 6 decades (from 1951-2010), climate change observation in the Philippines showed that the mean temperature increased by 0.64 degrees celcius. By the end of the century it is predicted that there will be an added approximately 4 degrees celcius warming across the globe in the regions of southeast asia.
+
+Chances of strong rainfall events and longer period of dry spells are expected for the coming decades which will have significant effects on the food production and livelihoods of the people.
+
+(Murphy, C., https://www.trocaire.org/sites/default/files/resources/policy/trocaire-maynooth-university-climate-change-report.pdf)
+
+Pests and diseases is greatly affected by the changing climate. In the Philippines, rice blast is one of the most damaging rice disease that causes yield losses to the farmers. In the development of disease control strategies, it is important to know the global climate changes
+
+
+
+
+
+
+Another form of income which the farmers in the Philippines can opt to do is through construction works.
+The construction industry encompasses all types of construction works from general construction to specialized construction. Type of works ranges from new works arising from the establishment of new building, roads, houses, etc., or can also be from repair of buildings or infrastructure. From 2013-2017, the employment share of the construction industry showed an average increase of 7.4%.
+
+The average daily basic pay in construction increased from USD6.38 in 2013 to USD7.52 in 2017 (conversion rate used: 1USD =50php)
+
+For more details see:
+
+National Wages and Productivity Commission. (April - June 2019). Construction: Wage and Productivity Trends. Manila, Philippines. http://www.nwpc.dole.gov.ph 
+
+
+
+
+
+
+
+
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#### References
+
+
+
+
