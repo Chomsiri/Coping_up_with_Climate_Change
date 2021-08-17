@@ -4,6 +4,8 @@ install.packages(decisionSupport)
 library(decisionSupport)
 install.packages("ggplot2")
 library(ggplot2)
+install.packages("dplyr")
+library(dplyr)
 
 # n is defined as 10 for all calculations since there are 10 years per decade. 
 n = 10
@@ -180,7 +182,7 @@ pls_result <- plsr.mcSimulation(object = rice_mc_simulation,
 # Read output list from Monte Carlo simulation and filter for maximum and minimum values 
 # of the variables NPV rice and NPV construction.
 options(max.print = .Machine$integer.max)
-options(digits=10)
+options(digits=2)
 
 typeof(rice_mc_simulation)
 
@@ -199,8 +201,8 @@ distribution = c("norm", "const","norm")
 
 # boundaries are coming from Monte Carlo simulation before. 
 # They are the maximal and minimal values which were identified from the 10.000 runs.
-lower = c(-4166.0295, 10, 455.290774)
-upper = c(6197.73452, 10, 3713.12608)
+lower = c(-4010, 10, 570)
+upper = c(7154, 10, 3432)
 
 costBenefitEstimate <- as.estimate(variable, distribution, lower, upper)
 
@@ -252,3 +254,4 @@ plot_cashflow(mcSimulation_object = prediction_profit,
               color_25_75 = "green4", color_5_95 = "green1",
               color_median = "red", 
               facet_labels = c("Rice cultivation", "Construction work"))
+
